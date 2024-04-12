@@ -8,30 +8,59 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <style>
 
-        /* Existing styles */
 
-/* Move the styles from the #home section here */
+/* Styles for the #home section that make it behave like .publication and .wp */
 #home {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding-top: 200px;
-}
-
-#home div:first-child {
-    flex: 1;
-    max-width: 400px;
-    margin-right: 20px;
-}
-
-#home div:first-child img {
+    justify-content: space-between;
     width: 100%;
+    margin: 0 auto;
+    padding-top: 192px;
+    box-sizing: border-box;
+}
+
+#home .home-image {
+    flex: 0 0 33.333%; /* Takes up one-third of the space */
+    max-width: 33.333%; /* Maximum width set to one-third */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .home-image img {
+    max-width: 100%; /* Maximum width set to one-third */
     height: auto;
 }
 
-#home div:nth-child(2) {
-    flex: 3;
+#home .home-text {
+    flex: 0 0 60.666%; /* Takes up remaining two-thirds of the space */
+    max-width: 60.666%; /* Maximum width set to two-thirds */
+    padding-right: 50px; /* Adds some space on the right */
 }
+
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+          margin-top: 96px; /* Adds 1 inch of space on top for smaller screens */
+    }
+
+     #home .home-image, 
+    #home .home-text {
+        flex: 0 0 100%;
+        max-width: 100%; /* Resets the width to full on small screens */
+    }
+
+    #home .home-image {
+        order: 1; /* Image goes first (on top) */
+    }
+
+    #home .home-text {
+        order: 2; /* Text goes second (below) */
+    }    
+}
+
+
 
 /* Additional styles for contact icons */
 .contact-icon {
@@ -55,24 +84,7 @@
     height: 35px;
 }
 
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-    #home {
-        padding-top: 50px;
-    }
 
-    #home div:first-child,
-    #home div:nth-child(2) {
-        max-width: 100%;
-        flex-basis: 100%;
-        margin-right: 0;
-    }
-
-    /* This class is added to put the image below the text on mobile */
-    #home div:first-child {
-        order: 2;
-    }
-}
 
         body, html {
             margin: 0;
@@ -282,15 +294,17 @@
     <a href="#media">Media & Policy</a>
 </div>
 
+
+
 <section id="home">
     <div>
-        <img src="https://dl.dropboxusercontent.com/scl/fi/i5rnlbzhg86b5l9j01r43/4web.jpeg?rlkey=56jq0lwpdo4bdo28vjklt23z3&" alt="Ahmed Skali">
+        <img src="https://dl.dropboxusercontent.com/scl/fi/7bmks47a1xyvxvp7m7quc/webimg.png?rlkey=iw5iagzllb3ieururrci9zkgv&" alt="Ahmed Skali">
     </div>
     <div>
         <h1>Ahmed Skali</h1>
-        <p>Welcome to my website. I am an Assistant Professor in the Department of Global Economics and Management at the University of Groningen.</p>
-        <p>I am also a fellow of the Global Labor Organization (GLO) and of the Households in Conflict Network (HiCN).</p>
-        <div class="contact-icon">
+                   <p>Welcome to my website. I am an Assistant Professor in the Department of Global Economics and Management at the University of Groningen.</p>
+            <p>I am also a fellow of the Global Labor Organization (GLO) and of the Households in Conflict Network (HiCN).</p>
+                    <div class="contact-icon">
             <a href="mailto:a.skali@rug.nl" target="_blank" style="text-decoration: none;">
                 <img src="https://dl.dropboxusercontent.com/scl/fi/awpsvpkymuyjv5zz3rmxh/mailbox.png?rlkey=gzmcozi9aeusdwk97dzsurf6b" alt="Email" style="width: 40px; height: 40px;">
             </a>
@@ -303,10 +317,9 @@
             <a href="https://scholar.google.com.au/citations?user=pTSRJKcAAAAJ&hl=en" target="_blank" style="text-decoration: none;">
                 <img src="https://dl.dropboxusercontent.com/scl/fi/z7o2etccf3v0gzz5t1bto/gs.png?rlkey=vouj3yht2j8uc9bmj4vp52wn3&" alt="Google Scholar" style="width: 35px; height: 35px;">
             </a>
-        </div>
+
     </div>
 </section>
-
 
 
 
