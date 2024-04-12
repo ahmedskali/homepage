@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 20px;
 }
 
 #home .home-image img {
@@ -51,13 +52,13 @@
         max-width: 100%; /* Resets the width to full on small screens */
     }
 
+        #home .home-text {
+        order: 1; /* Text goes second (below) */
+    }    
+
     #home .home-image {
         order: 2; /* Image goes first (on top) */
     }
-
-    #home .home-text {
-        order: 1; /* Text goes second (below) */
-    }    
 }
 
 
@@ -298,11 +299,11 @@
 
 <section id="home">
     <div>
-        <img src="https://dl.dropboxusercontent.com/scl/fi/7bmks47a1xyvxvp7m7quc/webimg.png?rlkey=iw5iagzllb3ieururrci9zkgv&" alt="Ahmed Skali">
+        <img src="webimg.png" alt="Ahmed Skali">
     </div>
     <div>
         <h1>Ahmed Skali</h1>
-                   <p>Welcome to my website. I am an Assistant Professor in the Department of Global Economics and Management at the University of Groningen.</p>
+                   <p>Welcome! I am an Assistant Professor in the Department of Global Economics & Management at the University of Groningen.</p>
             <p>I am also a fellow of the Global Labor Organization (GLO) and of the Households in Conflict Network (HiCN).</p>
                     <div class="contact-icon">
             <a href="mailto:a.skali@rug.nl" target="_blank" style="text-decoration: none;">
