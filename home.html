@@ -21,12 +21,12 @@
 }
 
 #home .home-image {
-    flex: 0 0 33.333%; /* Takes up one-third of the space */
-    max-width: 33.333%; /* Maximum width set to one-third */
+    flex: 0 0 25%; /* Takes up one-third of the space */
+    max-width: 25%; /* Maximum width set to one-third */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 
 #home .home-image img {
@@ -40,25 +40,24 @@
     padding-right: 50px; /* Adds some space on the right */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 390px) {
     #home {
         flex-direction: column;
           margin-top: 96px; /* Adds 1 inch of space on top for smaller screens */
     }
 
-     #home .home-image, 
-    #home .home-text {
-        flex: 0 0 100%;
-        max-width: 100%; /* Resets the width to full on small screens */
-        padding: 10px;
-    }
-
         #home .home-text {
         order: 1; /* Text goes second (below) */
+        flex: 0 0 100%;
+        max-width: 100%; /* Resets the width to full on small screens */
+        padding-right: 10px;
     }    
 
     #home .home-image {
         order: 2; /* Image goes first (on top) */
+        flex: 0 0 100%;
+        max-width: 80%; /* Resets the width to full on small screens */
+        padding-right: 10px;
     }
 }
 
@@ -300,7 +299,7 @@
 
 <section id="home">
     <div>
-        <img src="webimg.png" alt="Ahmed Skali">
+        <img src="images/4web.jpeg" alt="Ahmed Skali">
     </div>
     <div>
         <h1>Ahmed Skali</h1>
@@ -308,16 +307,16 @@
             <p>I am also a fellow of the Global Labor Organization (GLO) and of the Households in Conflict Network (HiCN).</p>
                     <div class="contact-icon">
             <a href="mailto:a.skali@rug.nl" target="_blank" style="text-decoration: none;">
-                <img src="https://dl.dropboxusercontent.com/scl/fi/awpsvpkymuyjv5zz3rmxh/mailbox.png?rlkey=gzmcozi9aeusdwk97dzsurf6b" alt="Email" style="width: 40px; height: 40px;">
+                <img src="images/mailbox.png" alt="Email" style="width: 40px; height: 40px;">
             </a>
             <a href="https://www.linkedin.com/in/ahmed-skali-88ab94127/" target="_blank" style="text-decoration: none;">
-                <img src="https://dl.dropboxusercontent.com/scl/fi/e6epukgecikwgkc964znd/linkedinbutton.jpeg?rlkey=28kspviaeuwipxdihzbwjladm&" alt="LinkedIn" style="width: 40px; height: 40px;">
+                <img src="images/linkedinbutton.jpeg" alt="LinkedIn" style="width: 40px; height: 40px;">
             </a>
             <a href="https://twitter.com/ahmedskali" target="_blank" style="text-decoration: none;">
-                <img src="https://dl.dropboxusercontent.com/scl/fi/2fmjaw66j4s57dam2hzil/tbutton.png?rlkey=nimmaagwid7yrn5vtp4ghhq64&" alt="Twitter" style="width: 40px; height: 40px;">
+                <img src="images/tbutton.png" alt="Twitter" style="width: 40px; height: 40px;">
             </a>
             <a href="https://scholar.google.com.au/citations?user=pTSRJKcAAAAJ&hl=en" target="_blank" style="text-decoration: none;">
-                <img src="https://dl.dropboxusercontent.com/scl/fi/z7o2etccf3v0gzz5t1bto/gs.png?rlkey=vouj3yht2j8uc9bmj4vp52wn3&" alt="Google Scholar" style="width: 35px; height: 35px;">
+                <img src="images/gs.png" alt="Google Scholar" style="width: 35px; height: 35px;">
             </a>
 
     </div>
@@ -350,7 +349,7 @@
                 <p> <em>Social Psychological and Personality Science</em>, forthcoming</p>
                 <a href="https://pure.rug.nl/ws/portalfiles/portal/784845132/chan-et-al-2023-patience-predicts-attitudes-toward-vaccination-and-uptake-of-vaccines.pdf" target="_blank">PDF</a>
             </div>
-            <img src="https://dl.dropboxusercontent.com/scl/fi/paqlz7sm80fv542weqc74/patience.png?rlkey=hcbc36g8okh9e146zhkhpmsd7&d" alt="Patience" style="width: 100%; max-width: 400px; height: auto;">
+            <img src="images/patience.png" alt="Patience" style="width: 100%; max-width: 400px; height: auto;">
         </div>
             <div class="publication" data-tags="humanbehaviour pubpol">
             <div class="publication-content">
@@ -359,7 +358,7 @@
                 <p> <em>Scientific Data</em>, 2023</p>
                 <a href="https://www.nature.com/articles/s41597-023-02080-8" target="_blank">HTML</a>
             </div>
-            <img src="https://dl.dropboxusercontent.com/scl/fi/g8ei0hanowjmj08vd7wex/scidata-world-map.png?rlkey=uyxxp45li0c2p5zxo4up5xfsa&" alt="Patience" style="width: 100%; max-width: 400px; height: auto;">
+            <img src="images/scidata world map.png" alt="wmap" style="width: 100%; max-width: 400px; height: auto;">
         </div>
                 <div class="publication" data-tags="polecon humanbehaviour pubpol">
             <div class="publication-content">
@@ -368,7 +367,7 @@
                 <p> <em>Nature Communications</em>, 2022</p>
                 <a href="https://www.nature.com/articles/s41467-021-27668-9" target="_blank">HTML</a>
             </div>
-            <img src="https://dl.dropboxusercontent.com/scl/fi/6i5pyi5nuagp6c5izhl0m/ncomms.png?rlkey=gbr5yg2osy0wss6ap3az4zf39&" alt="ncomms" style="width: 100%; max-width: 400px; height: auto;">
+            <img src="images/ncomms.png" alt="ncomms" style="width: 100%; max-width: 400px; height: auto;">
         </div>
 
         <div class="publication" data-tags="humanbehaviour pubpol">
@@ -378,7 +377,7 @@
                 <p> <em>PNAS Nexus</em>, 2022</p>
                 <a href="https://academic.oup.com/pnasnexus/article/1/3/pgac093/6631580?login=false" target="_blank">HTML</a>
             </div>
-            <img src="https://dl.dropboxusercontent.com/scl/fi/ui1pi8pw3bilxcupnwztj/pnasnexus.png?rlkey=erio0mv04pk0oylzr3skrzaq2" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+            <img src="images/pnasnexus.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
      </div>
 
 
@@ -401,7 +400,7 @@
         <a href="https://pure.rug.nl/ws/files/178822931/1_s2.0_S0147596720300664_main.pdf" target="_blank">PDF</a>
         <p> Media: <a href="https://www.nationalaffairs.com/blog/detail/findings-a-daily-roundup/getting-a-superpower" target="_blank">National Affairs</a></p>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/ewpek1xg0a6v57facuewb/ch_soldiers.png?rlkey=ragais39pnhp3xswsh5nmwdl3&" alt="CH soldiers" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/ch_soldiers.png" alt="CH soldiers" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
  <div class="publication" data-tags="humanbehaviour pubpol">
@@ -412,7 +411,7 @@
         <a href="https://journals.sagepub.com/doi/10.1177/1948550620952572" target="_blank">HTML</a>
         <p> Media: <a href="https://www.theage.com.au/national/queensland/why-some-states-handled-lockdown-better-than-others-20200929-p560e3.html?ref=rss&utm_medium=rss&utm_source=rss_feed" target="_blank">The Age</a>  <a href="https://www.brisbanetimes.com.au/national/queensland/why-some-states-handled-lockdown-better-than-others-20200929-p560e3.html" target="_blank">Brisbane Times</a> <a href="https://www.scimex.org/newsfeed/covid-19-control-rests-with-human-behaviour,-at-least-until-a-vaccine-arrives" target="_blank">SciMex</a>  <a href="https://www.nationaltribune.com.au/covid-19-control-rests-with-human-behaviour-at-least-until-a-vaccine-arrives/" target="_blank">National Tribune</a> <a href="https://www.miragenews.com/covid-19-control-rests-with-human-behaviour-at-least-until-a-vaccine-arrives/" target="_blank">Mirage News</a> <a href="https://www.eurekalert.org/news-releases/715851" target="_blank">EurekAlert!</a> <a href="https://medicalxpress.com/news/2020-09-covid-rests-human-behavior-vaccine.html" target="_blank">Medical Xpress</a>  </p>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/rl2sm16u0bqc0syupkbhx/pers.png?rlkey=f8vzqs7mis970bel8r8vrbi68" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/pers.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 <div class="publication" data-tags="polecon humanbehaviour">
@@ -422,7 +421,7 @@
         <p> <em>Economics & Politics</em>, 2021</p>
         <a href="https://drive.google.com/file/d/1bwZzZJuU1phzjWLgCkL2H-tYz_4uJnxC/view" target="_blank">PDF</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/s6mqfhkswgkr9agtzgz2w/ch_wordcloud.png?rlkey=3xx0zwgisi0ch228xjam42oqi&" alt="CH cloud" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/ch_wordcloud.png" alt="CH cloud" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 </div>
 
@@ -434,7 +433,7 @@
         <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.681975/full" target="_blank">HTML</a>
         <p> Media: <a href="https://www.cdc.gov/healthcommunication/index.html" target="_blank"> CDC Health Communications Science Digest</a>  <a href="https://pie.pascalobservatory.org/pascalnow/pascal-activities/news/nep-new-economics-papers-social-norms-and-social-capital-digest-135" target="_blank"> Pascal International Exchange </a> </p>
       </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/mfjrxjh7nul5nttg1g3uu/frontiers.png?rlkey=qg9l3a8gozicsu8zt2a3xpfl2" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/frontiers.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 <div class="publication" data-tags="pubpol econdev">
@@ -445,7 +444,7 @@
         <a href="https://www.sciencedirect.com/science/article/pii/S0166497221000742?via%3Dihub" target="_blank">HTML</a>
         <p> Media: <a href="https://www.austaxpolicy.com/the-additionality-of-rd-tax-policy-evidence-from-australia/" target="_blank">AusTaxPolicy Blog</a> <a href="https://theconversation.com/randd-tax-incentives-need-to-be-simple-and-underpin-investor-confidence-66273" target="_blank"> The Conversation</a>  <a href="http://www.aamc.org.au/rd-study-incentives-double-our-money/" target="_blank"> Australian Advanced Manufacturing Council </a> </p>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/5n2d6md8povpr0se43iym/rdtax.png?rlkey=derm1nh478vu9fav1j3gzwzgb" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/rdtax.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 <div class="publication" data-tags="econdev humanbehaviour pubpol">
@@ -456,7 +455,7 @@
         <a href="https://globalizationandhealth.biomedcentral.com/articles/10.1186/s12992-021-00677-5" target="_blank">HTML</a>
         <p> Media: <a href="https://www.prsgroup.com/from-the-ceo-november-2021/" target="_blank">PRS Group</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/xwtg36clcsnxt2z6lwrav/gh.png?rlkey=952i87fr2vqo4f76p6sah8wku" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/gh.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 <div class="publication" data-tags="polecon humanbehaviour">
@@ -467,7 +466,7 @@
         <p> Singapore: Springer Nature, 2021</p>
         <a href="https://drive.google.com/file/d/132rMWFxxwCWb974hB2EOs1SABoPdYFEX/view" target="_blank">PDF</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/8l3zr5cr3u8dey4l3xsmz/forensic.png?rlkey=2l03xe7o418lqs18v0e9uhcd5" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/forensic.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 <div class="publication" data-tags="polecon econdev">
@@ -478,7 +477,7 @@
         <p> 2020 winner, <em>The Leadership Quarterly</em> Best Paper Award</p>
         <a href="https://drive.google.com/file/d/1gSZX3oPnJ9YWZwG0Px_6KRd62K9ZNPrj/view" target="_blank">PDF</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/wa0cls3etz7hqtnlinfsg/mobutu.png?rlkey=s62fyfzh3nu3j427uhl1s2cz2" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/mobutu.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 <div class="publication" data-tags="humanbehaviour">
@@ -488,7 +487,7 @@
         <p> <em>Journal of Behavioral & Experimental Economics</em>, 2020</p>
         <a href="https://drive.google.com/file/d/1uIROkaAXDJwrNaCl2FHU2cTOvY9CTBSx/view" target="_blank">PDF</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/nt5b92v2s014lk2d1lh3c/ethicspaper.png?rlkey=qin5scdhfanlagnikt5you1b7" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/ethicspaper.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 <div class="publication" data-tags="humanbehaviour pubpol">
@@ -498,7 +497,7 @@
         <p> <em>Scientific Reports</em>, 2020</p>
         <a href="https://www.nature.com/articles/s41598-020-76763-2" target="_blank">HTML</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/4pv52zd3yqesllkrq12z9/riskscirep.png?rlkey=r15v8udkb3fdvvf7voxg1wgpd" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/riskscirep.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 <div class="publication" data-tags="humanbehaviour pubpol">
@@ -508,7 +507,7 @@
         <p> <em>PLOS One</em>, 2020</p>
         <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240644" target="_blank">HTML</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/zq3h7mekewjvb0i3zkj1t/plos.png?rlkey=y91xp2gitq1apw2x1xou240hl" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/plos.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 
@@ -521,7 +520,7 @@
         <p>London: Palgrave Macmillan, 2020</p>
         <a href="https://link.springer.com/chapter/10.1007/978-981-15-1556-9_9" target="_blank">HTML</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/97iym3dv41jx43ualrhxe/foreignaidchapter.png?rlkey=jw6bmghy7gyqeltaprrz8eze7" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/foreignaidchapter.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 
@@ -531,7 +530,7 @@
         <p> <em>Journal of Economic Psychology</em>, 2017</p>
         <a href="https://drive.google.com/file/d/0BwqbQjw0aU48bWlWVkEwRC1Ma0E/view?resourcekey=0-HnRMXJPSYt1FNtNFWqVHEQ" target="_blank">PDF</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/a6v4t80uy6x7yz2didsfx/joepmap.png?rlkey=7giu5edosg1rb5ohs867j65fz" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/joepmap.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 
@@ -542,7 +541,7 @@
         <p> <em>European Economic Review</em>, 2015</p>
         <a href="https://drive.google.com/file/d/0BwqbQjw0aU48aEhuTnduRGt2aVU/view?resourcekey=0-K2VVwJCJns20h8q90SLJZw" target="_blank">PDF</a>
     </div>
-    <img src="https://dl.dropboxusercontent.com/scl/fi/y9xdduq7vcn9guw9ujlm1/eerwordcloud.png?rlkey=lr1mgnv6k2y7s4p5nle3a6f99" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="images/eerwordcloud.png" alt="alttext" style="width: 100%; max-width: 400px; height: auto;">
 </div>
 
 
