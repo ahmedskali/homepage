@@ -9,59 +9,6 @@
     <style>
 
 
-/* Styles for the #home section that make it behave like .publication and .wp */
-#home {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 100px;
-    box-sizing: border-box;
-}
-
-#home .home-image {
-    flex: 0 0 25%; /* Takes up one-third of the space */
-    max-width: 25%; /* Maximum width set to one-third */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 0px;
-}
-
-#home .home-image img {
-    max-width: 100%; /* Maximum width set to one-third */
-    height: auto;
-}
-
-#home .home-text {
-    flex: 0 0 60.666%; /* Takes up remaining two-thirds of the space */
-    max-width: 60.666%; /* Maximum width set to two-thirds */
-    padding-right: 50px; /* Adds some space on the right */
-}
-
-@media (max-width: 390px) {
-    #home {
-        flex-direction: column;
-          margin-top: 96px; /* Adds 1 inch of space on top for smaller screens */
-    }
-
-        #home .home-text {
-        order: 1; /* Text goes second (below) */
-        flex: 0 0 100%;
-        max-width: 100%; /* Resets the width to full on small screens */
-        padding-right: 10px;
-    }    
-
-    #home .home-image {
-        order: 2; /* Image goes first (on top) */
-        flex: 0 0 100%;
-        max-width: 80%; /* Resets the width to full on small screens */
-        padding-right: 10px;
-    }
-}
-
-
 
 /* Additional styles for contact icons */
 .contact-icon {
@@ -85,6 +32,46 @@
     height: 35px;
 }
 
+
+.container_a {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .photo_a {
+        flex: 1 1 200px;
+        margin: 10px;
+        max-width: 33%;
+        border-radius: 10px; /* Rounded corners for the photo */
+    }
+
+    .about_a {
+        flex: 2 1 400px;
+        margin: 10px;
+        max-width: 66%;
+        text-align: left;
+        border-radius: 10px; /* Rounded corners for the about blurb */
+        background-color: #f0f0f0; /* Optional: adds a background color to the about section */
+        padding: 10px; /* Optional: adds padding inside the about section */
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* Rounded corners for the image */
+    }
+
+    @media (max-width: 600px) {
+        .container_a {
+            flex-direction: column;
+        }
+        .photo_a, .about_a {
+            max-width: 90%;
+        }
+    }
 
 
         body, html {
@@ -187,7 +174,7 @@
 /* Specifically for images to ensure they don't stretch or become distorted */
 .publication img, .wp img {
     width: auto; /* Maintains the image's aspect ratio */
-    max-width: 100%; /* Ensures the image is not wider than its container */
+    max-width: 80%; /* Ensures the image is not wider than its container */
     height: auto; /* Maintains the image's aspect ratio */
 }
 
@@ -298,12 +285,14 @@
 
 
 <section id="home">
-    <div>
-        <img src="images/4web.jpeg" alt="Ahmed Skali">
-    </div>
-    <div>
-        <h1>Ahmed Skali</h1>
-                   <p>Welcome! I am an Assistant Professor in the Department of Global Economics & Management at the University of Groningen.</p>
+
+    <div class="container_a">
+        <div class="photo_a">
+            <img src="images/webimg.png" alt="Photo">
+        </div>
+        <div class="about_a">
+            <h1>Ahmed Skali</h1>
+            <p>Welcome! I am an Assistant Professor in the Department of Global Economics & Management at the University of Groningen.</p>
             <p>I am also a fellow of the Global Labor Organization (GLO) and of the Households in Conflict Network (HiCN).</p>
                     <div class="contact-icon">
             <a href="mailto:a.skali@rug.nl" target="_blank" style="text-decoration: none;">
@@ -318,9 +307,10 @@
             <a href="https://scholar.google.com.au/citations?user=pTSRJKcAAAAJ&hl=en" target="_blank" style="text-decoration: none;">
                 <img src="images/gs.png" alt="Google Scholar" style="width: 35px; height: 35px;">
             </a>
-
+        </div>
     </div>
 </section>
+
 
 
 
