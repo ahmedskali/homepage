@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.9)  31 JAN 2025 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.9)  2 MAR 2025 14:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,24 +512,19 @@ LaTeX Font Info:    Try loading font information for TS1+pplj on input line 491
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 )
-Overfull \hbox (45.68013pt too wide) in paragraph at lines 542--563
+Overfull \hbox (117.95013pt too wide) in paragraph at lines 542--563
 [] 
  []
 
-
-Overfull \hbox (45.68013pt too wide) in paragraph at lines 564--585
-[][] 
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 598.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 592.
 [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 598.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 592.
  (./CV_Skali.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 598.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 598.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 592.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 592.
 Package rerunfilecheck Info: File `CV_Skali.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 598.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 592.
  ) 
 Here is how much of TeX's memory you used:
  6946 strings out of 492616
@@ -546,10 +541,10 @@ f-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2019/texmf-dist/
 fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
 ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on CV_Skali.pdf (6 pages, 122281 bytes).
+Output written on CV_Skali.pdf (6 pages, 122066 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
+ 140 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  19 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
